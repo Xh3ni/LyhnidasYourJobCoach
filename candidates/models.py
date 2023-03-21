@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django_countries.fields import CountryField
+from recruiters.models import Job
 from django.utils import timezone
 from autoslug import AutoSlugField
 
@@ -40,3 +41,24 @@ class Skill(models.Model):
     skill = models.CharField(max_length=200)
     user = models.ForeignKey(
         User, related_name='skills', on_delete=models.CASCADE)
+
+class SavedJobs(models.Model):
+    job = models.ForeignKey(
+        Job, related_name='saved_job', on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, related_name='saved', on_delete=models.CASCADE)
+    date_posted = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.job.title
+
+
+class AppliedJobs(models.Model):
+    job = models.ForeignKey(
+        Job, related_name='applied_job', on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, related_name='applied_user', on_delete=models.CASCADE)
+    date_posted = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.job.title

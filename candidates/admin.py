@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Profile, Skill
+from .models import Profile, Skill, AppliedJobs, SavedJobs
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -16,3 +16,7 @@ class SkillAdmin(admin.ModelAdmin):
     list_display = ('user', 'skill')
     search_fields = ['user', 'skill']
     list_filter = ('user', 'skill')
+
+
+admin.site.register(AppliedJobs)
+admin.site.register(SavedJobs)

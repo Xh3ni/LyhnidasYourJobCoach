@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'cities_light',
     'django_countries',
     'django_summernote',
     'candidates',
