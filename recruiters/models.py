@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 from autoslug import AutoSlugField
+from django_countries.fields import CountryField
 
 CHOICES = (
     ('Full Time', 'Full Time'),
@@ -16,10 +17,7 @@ class Job(models.Model):
         User, related_name='jobs', on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     company = models.CharField(max_length=200)
-    country = models.ForeignKey(
-        'cities_light.Country', on_delete=models.SET_NULL, null=True, blank=True)
-    city = models.ForeignKey(
-        'cities_light.City', on_delete=models.SET_NULL, null=True, blank=True)
+    location = models.CharField(max_length=255, default='Germany')
     description = models.TextField()
     skills_req = models.CharField(max_length=200)
     job_type = models.CharField(

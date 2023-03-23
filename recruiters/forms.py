@@ -4,7 +4,8 @@ from .models import Job
 
 class NewJobForm(forms.ModelForm):
     class Meta:
-        fields = ['title', 'company', 'country', 'city',
+        model = Job
+        fields = ['title', 'company', 'location',
                   'description', 'skills_req', 'job_type', 'link']
         help_texts = {
             'skills_req': 'Enter all the skills required each separated by commas.',
@@ -15,7 +16,7 @@ class NewJobForm(forms.ModelForm):
 class JobUpdateForm(forms.ModelForm):
     class Meta:
         model = Job
-        fields = ['title', 'company', 'country', 'city',
+        fields = ['title', 'company', 'location',
                   'description', 'skills_req', 'job_type', 'link']
         help_texts = {
             'skills_req': 'Enter all the skills required each separated by commas.',

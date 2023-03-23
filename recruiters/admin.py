@@ -8,7 +8,7 @@ class JobAdmin(SummernoteModelAdmin):
 
     list_display = ('recruiter', 'title', 'slug', 'company')
     search_fields = ['company', 'title']
-    list_filter = ('company', 'country', 'title')
+    list_filter = ('company', 'location', 'title')
 
 
 @admin.register(Applicants)
