@@ -1,5 +1,5 @@
 footer {
-    background-color: #292c2f;
+    background-color: #138496;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -33,7 +33,7 @@ footer {
   }
   
   .footer-navigation p.company-name {
-    color: #8f9296;
+    color: #000000;
     font-size: 14px;
     font-weight: normal;
     margin-top: 20px;
@@ -52,7 +52,7 @@ footer {
   }
   
   .footer-contacts p a {
-    color: #5383d3;
+    color: #e5f3ff;
     text-decoration: none;
   }
   
@@ -87,7 +87,7 @@ footer {
   
   .footer-about p {
     line-height: 20px;
-    color: #92999f;
+    color: #e5f3ff;
     font-size: 13px;
     font-weight: normal;
     margin: 0;

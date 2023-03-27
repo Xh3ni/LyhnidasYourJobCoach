@@ -29,11 +29,10 @@
             </p>
           </span>
           <div class="card-footer">
-            <span style="font-size: 18px"
-              >This candidate has <b class="text-success">{{ common }} </b>out of
-              <b class="text-danger">{{ job_skills }}</b> skills required for this
-              job.</span
-            >
+            <span style="font-size: 18px">
+              This candidate has <b class="text-success">{{ common }} </b>out of
+              <b class="text-danger">{{ job_skills }}</b> skills required for this job.
+            </span>
           </div>
         </div>
       </div>
@@ -42,8 +41,8 @@
     {% else %}
     <p class="text-center">
       No relevant candidates found this job! Please check if your
-      <a href="{% url 'add-job-detail' job.slug %}">job data</a> is complete and
-      is following the instructions.
+      <a href="{% url 'add-job-detail' job.slug %}">job data</a> 
+      is complete and is following the instructions.
     </p>
     <br />
     {% endif %}
