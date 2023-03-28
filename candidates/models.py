@@ -1,11 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
-from autoslug import AutoSlugField
 from cloudinary.models import CloudinaryField
 from django_countries.fields import CountryField
 from recruiters.models import Job
 from django.utils import timezone
-import base64
+from django.urls import reverse
 
 CHOICES = (
     ('Full Time', 'Full Time'),
@@ -25,10 +24,10 @@ class Profile(models.Model):
     grad_year = models.IntegerField(blank=True)
     looking_for = models.CharField(
         max_length=30, choices=CHOICES, default='Full Time', null=True)
-    slug = AutoSlugField(populate_from='full_name', unique=True, null=True)
+    slug = models.SlugField(max_length=200, unique=True, null=True)
 
     def get_absolute_url(self):
-        return "/profile/{}".format(self.slug)
+        return reverse("/profile/{}", kwargs={"slug": self.slug})
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)

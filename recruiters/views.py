@@ -5,6 +5,7 @@ from candidates.models import Profile, Skill
 from .forms import NewJobForm
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
+from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -28,6 +29,7 @@ def add_job(request):
             data = form.save(commit=False)
             data.recruiter = user
             data.save()
+            messages.success(request, 'Your job post is successfully submitted.')
             return redirect('job-list')
     else:
         form = NewJobForm()
@@ -48,6 +50,7 @@ def edit_job(request, slug):
         if form.is_valid():
             data = form.save(commit=False)
             data.save()
+            messages.success(request, 'Your job post is updated.')
             return redirect('add-job-detail', slug)
     else:
         form = NewJobForm(instance=job)

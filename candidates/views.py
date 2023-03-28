@@ -68,7 +68,7 @@ def job_search_list(request):
 
 # view to display details of a particular job
 
-
+@login_required
 def job_detail(request, slug):
     job = get_object_or_404(Job, slug=slug)
     apply_button = 0
@@ -170,7 +170,9 @@ def edit_profile(request):
             data = form.save(commit=False)
             data.user = you
             data.save()
+            messages.success(request, 'Your profile is updated.')
             return redirect('my-profile')
+            
     else:
         form = ProfileUpdateForm(instance=profile)
     context = {
@@ -203,6 +205,7 @@ def delete_skill(request, pk=None):
         id_list = request.POST.getlist('choices')
         for skill_id in id_list:
             Skill.objects.get(id=skill_id).delete()
+            messages.warning(request, 'Your skill is deleted.')
         return redirect('my-profile')
 
 
@@ -211,6 +214,7 @@ def save_job(request, slug):
     user = request.user
     job = get_object_or_404(Job, slug=slug)
     saved, created = SavedJobs.objects.get_or_create(job=job, user=user)
+    messages.success(request, 'Selected job is saved.')
     return HttpResponseRedirect('/job/{}'.format(job.slug))
 
 
@@ -221,7 +225,9 @@ def apply_job(request, slug):
     applied, created = AppliedJobs.objects.get_or_create(job=job, user=user)
     applicant, creation = Applicants.objects.get_or_create(
         job=job, applicant=user)
+    messages.success(request, 'Your application is successfully submitted.')
     return HttpResponseRedirect('/job/{}'.format(job.slug))
+
 
 
 @login_required
@@ -230,4 +236,5 @@ def remove_job(request, slug):
     job = get_object_or_404(Job, slug=slug)
     saved_job = SavedJobs.objects.filter(job=job, user=user).first()
     saved_job.delete()
+    messages.warning(request, 'Job is removed.')
     return HttpResponseRedirect('/job/{}'.format(job.slug))
