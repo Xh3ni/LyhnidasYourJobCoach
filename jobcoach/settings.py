@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -105,7 +105,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jobcoach.wsgi.application'
 
-SITE_ID = 2
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
