@@ -372,6 +372,22 @@ NewJobForm and JobUpdateForm.
 |:--------------------  |--------------- |--------------- |
 
 
+### Future Features
+This project will be maintained in the future for the purpose of a job portal.
+Some features that I would like to implement are listed below.
+* Allow for the use of social sign ins.
+* Better form validation.
+* Add a limit for job postings by recruiters
+* For more job posts implement a payment
+* Add create/ generate CV section for candidations
+* Implement better filters
+* User permissions / groups to allow staff to have non-breaking access to the CMS.
+* Further improve user experience.
+* Add a FAQs, subscribers list, and contact section.
+
+## Marketing <a name="marketing"></a>
+
++ This site has a link to Lyhnidas Social Pages (Facebook, twitter, LinkedIn and gmail adresse) with a link on the page footer.
 
 
 
