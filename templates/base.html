@@ -41,7 +41,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link text-light {{ home_page }}" href="{% url 'home' %}">Job Search</a>
+                <a class="nav-item nav-link text-light {{ home_page }}" href="{% url 'job-search-list' %}">Job Search</a>
                 {% if user.is_authenticated %}
                 <a class="nav-item nav-link text-light {{ profile_page }}" href="{% url 'my-profile' %}">My Profile</a>
                 <a class="nav-item nav-link text-warning" href="{% url 'add-job' %}">Recruiters/ Employers</a>

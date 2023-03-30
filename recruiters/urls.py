@@ -12,5 +12,5 @@ urlpatterns = [
     path('job/<slug>/applicants', views.applicant_list, name='applicant-list'),
     path('job/<slug>/selected', views.selected_list, name='selected-list'),
     path('job/<job_id>/select-applicant/<can_id>/', views.select_applicant, name='select-applicant'),
-    path('job/<job_id>>/remove-applicant/<can_id>/', views.remove_applicant, name='remove-applicant'),
+    path('job/<job_id>/remove-applicant/<can_id>/', views.remove_applicant, name='remove-applicant'),
 ]

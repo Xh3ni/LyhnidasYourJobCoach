@@ -10,6 +10,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.core.paginator import Paginator
+from django.views.decorators.csrf import csrf_exempt
 
 
 def rec_details(request):
@@ -215,3 +216,4 @@ def remove_applicant(request, can_id, job_id):
     applicant = Applicants.objects.filter(job=job, applicant=user).first()
     applicant.delete()
     return HttpResponseRedirect('/hiring/job/{}/applicants'.format(job.slug))
+
