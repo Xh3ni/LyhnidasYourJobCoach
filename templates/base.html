@@ -1,20 +1,21 @@
 {% load static %}
-<!DOCTYPE html>
-<html>
 
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dmlbtywv4/image/upload/v1679610422/job-search_mmo6mg.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dmlbtywv4/image/upload/v1679610422/job-search_mmo6mg.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
-    <link type="text/css" rel="stylesheet" href="{% static 'styles.css' %}" />
-    <link type="text/css" rel="stylesheet" href="{% static 'footer.css' %}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'styles.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'footer.css' %}">
 
     <style>
         body {
@@ -24,6 +25,7 @@
     </style>
 
     {% block cssfiles %}{% endblock cssfiles %}
+
     <title>Lyhnidas Your Job Coach</title>
 </head>
 
@@ -33,7 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand text-light" href="{% url 'detail-candidates' %}">
             <img src="https://res.cloudinary.com/dmlbtywv4/image/upload/v1679610422/job-search_mmo6mg.png" width="40" height="40"
-                class="d-inline-block align-top mr-3" alt="" /><b>Lyhnidas Your Job Coach</b>
+                class="d-inline-block align-top mr-3" alt="job search logo"><b>Lyhnidas Your Job Coach</b>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +60,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand text-light" href="{% url 'detail-recruiters' %}">
             <img src="https://res.cloudinary.com/dmlbtywv4/image/upload/v1679610422/job-search_mmo6mg.png" width="40" height="40"
-                class="d-inline-block align-top mr-3" alt="" /><b>Lyhnidas Recruiter</b>
+                class="d-inline-block align-top mr-3" alt="job search logo"><b>Lyhnidas Recruiter</b>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +98,10 @@
             </div>
         </div>
     </div>
-    <main class="container">{% block content %}{% endblock content %}</main>
+    <main class="container">
+        {% block content %}
+        {% endblock content %}
+    </main>
 
     <footer>
         <div class="row">
@@ -107,7 +112,7 @@
                         href="{% url 'detail-recruiters' %}">Recruiters</a>
                 </p>
                 <p class="company-name">
-                    Lyhnidas &copy;2023<br /><small class="text-white">All rights reserved!</small><br />
+                    Lyhnidas &copy;2023<br><small class="text-white">All rights reserved!</small><br>
                 </p>
             </div>
             <div class="col-sm-6 col-md-4 footer-contacts">

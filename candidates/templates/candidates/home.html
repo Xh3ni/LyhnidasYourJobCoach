@@ -1,13 +1,13 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<br /><br />
+<br><br>
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
       <h2><b>Search Jobs</b></h2>
       <form class="form-signin mt-4" action="{% url 'job-search-list' %}" method="get">
-        <input name="p" type="text" class="form-control" placeholder="Enter Job Title, Skills, Type or Company"/><br />
+        <input name="p" type="text" class="form-control" placeholder="Enter Job Title, Skills, Type or Company"/><br>
         <input name="q" type="text" class="form-control" placeholder="Enter Job Location"/>
-        <br />
+        <br>
         <div class="form-group">
           <button class="btn btn-lg btn-primary btn-block" type="submit">
             Search Jobs
@@ -37,7 +37,7 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">
-              <b>Some Popular Search terms:</b><br />
+              <b>Some Popular Search terms:</b><br>
             </h5>
             <hr my-2 />
 

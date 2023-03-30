@@ -2,10 +2,10 @@
 <h2 align="center"><strong>Lyhnidas Your Job Coach</strong></h2>
 
 ### **Live Site:**
-[The Newsbox](https://lyhnidas-your-job-coach.herokuapp.com/)
+[Lyhnidas Your Job Coach](https://lyhnidas-your-job-coach.herokuapp.com/)
 
 ### **Repository:**
-[The Newsbox Repository](https://github.com/Xh3ni/LyhnidasYourJobCoach)
+[Lyhnidas Your Job Coach Repository](https://github.com/Xh3ni/LyhnidasYourJobCoach)
 
 ### **Developer:**
 Xhensila Stambolliu
@@ -436,6 +436,13 @@ Some features that I would like to implement are listed below.
 * [django_summernote](https://pypi.org/project/django-summernote/)
     * Allows to embed Summernote into Django very handy. Support admin mixins and widgets.
 
+## Testing <a name="testing"></a>
+
+Testing is required on all features and user stories. 
+All clickable links must redirect to the correct pages. 
+All forms linked to the database must be tested to ensure 
+they insert all given fields into the correct collections.
+
 ## Deployment on Heroku <a name="deployment"></a>
 
 This project was deployed through Heroku using the following steps:
@@ -465,5 +472,22 @@ Heroku needs to know which technologies are being used and any requirements, so 
 * Enter all variables needed.
 * Deploy the website
 
+## Deploy
+* In Heroku, once all the variables are in place, locate 'Manual Deploy' > choose the master branch and click 'Deploy Branch'.
+* Once the app is built (it may take a few minutes), click 'Open App' from the top of the page.
+* Go back to the 'Deploy' tab and you can now click 'Enable Automatic Deployment'. Changes automatically deploy when you make a git push.
+
+[Config Vars](https://res.cloudinary.com/dmlbtywv4/image/upload/v1680214489/deploy_final_kgsjzy.png)
+[Deploy](https://res.cloudinary.com/dmlbtywv4/image/upload/v1680214489/deploy_final2_gyo39z.png)
 
 
+## Credits <a name="credits"></a>
+
+### Code
+* The project is broadly based on the I think therefor I blog project by the Code Institute and was used as a base for my project (https://github.com/Code-Institute-Solutions/Django3blog)
+* The navbar was built using references from walkthrough project I think therefor I blog
+* The Login/SignUp was build referenced by I think therefor I blog
+
+### Acknowledgments
+* My husband Bernardo for his support and advice.
+* Students of Code Institute on slack.

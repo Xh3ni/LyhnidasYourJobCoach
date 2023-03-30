@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% load static %} {% load crispy_forms_tags %}
-{% block content %} <br /><br />
+{% block content %} <br><br>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
       <div class="card card-signin my-5">
         <div class="card-body">
           <h3 class="text-center">Profile Data</h3>
-          <br />
+          <br>
           <form class="form-signin">
             <div class="form-group">
               <p>Name: {{ profile.full_name }}</p>
@@ -25,8 +25,8 @@
               {% endif %} {% if request.user == u %}
               <hr class="my-4" />
               <a class="btn btn-warning btn-block" href="{% url 'edit-profile' %}">Edit Profile</a>
-              <br />
-              <a class="btn btn-primary btn-block" href="{% url 'saved-jobs' %}">Saved Jobs</a><br />
+              <br>
+              <a class="btn btn-primary btn-block" href="{% url 'saved-jobs' %}">Saved Jobs</a><br>
               <a class="btn btn-success btn-block" href="{% url 'applied-jobs' %}">Applied Jobs</a>
               {% endif %}
             </div>
@@ -38,7 +38,7 @@
       <div class="card card-signin my-5">
         <div class="card-body">
           <h3 class="text-center">Skills ({{ skills.count }})</h3>
-          <br />
+          <br>
           {% if request.user != u %}
           <ol>
             {% for skill in skills %}
@@ -49,15 +49,15 @@
           <form class="form-signin" method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-              <br />
+              <br>
               {{ form|crispy }}
             </fieldset>
             <div class="form-group">
               <button class="btn btn-lg btn-outline-primary btn-block" type="submit">
-                Add Skill</button><br />
+                Add Skill</button><br>
             </div>
           </form>
-          <br />
+          <br>
           {% if skills %}
           <form class="form-signin" action="{% url 'skill-delete' %}" method="POST">
             {% csrf_token %} {% for skill in skills %}
@@ -65,10 +65,10 @@
               <input class="mr-2" type="checkbox" value="{{ skill.id }}" name="choices"/>{{ skill.skill }}
             </div>
             {% endfor %}
-            <br />
+            <br>
             <div class="form-group">
               <button class="btn btn-lg btn-outline-danger btn-block" type="submit" name="delete">
-                Delete Selected Skills</button><br />
+                Delete Selected Skills</button><br>
             </div>
           </form>
           {% endif %} {% endif %}

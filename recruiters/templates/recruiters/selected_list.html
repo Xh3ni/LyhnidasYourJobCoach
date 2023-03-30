@@ -1,10 +1,10 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<br /><br />
+<br><br>
 <div>
   <h3 class="text-center">
     <b>Seleted Applicants for {{job.title}}</b>
   </h3>
-  <br />
+  <br>
   {% if profiles %}
   <div class="row">
     {% for profile in profiles %}
@@ -23,7 +23,7 @@
             {% endif %}
           </a>
           <p style="font-size: 17px">
-            {{profile.user.email}}<br />{{profile.country.name}}
+            {{profile.user.email}}<br>{{profile.country.name}}
           </p>
           {% if profile.resume %}
           <a href="{{profile.resume.url}}" target="_blank">Click here to view the resume</a>
@@ -43,7 +43,7 @@
     No applicant has been selected till now! Select some
     <a href="{% url 'applicant-list' job.slug %}">applicant</a> first!
   </p>
-  <br />
+  <br>
   {% endif %}
 </div>
 {% endblock content %}
