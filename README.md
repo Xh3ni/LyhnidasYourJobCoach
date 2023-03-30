@@ -218,6 +218,73 @@ NewJobForm and JobUpdateForm.
 16. As an ...admin... I can ...add/edit/update/delete a job post... so that ...maintain the site and remove any inappropriate contents...
 17. As an ...admin... I can ...review all job posts... so that I can ...maintain the site and remove any inappropriate post...
 
+### Agile methodology <a name="agile"></a>
+
+* All functionality and development of this project will be managed through GitHub issues, milestones and projects.
+
+<summary>All sprints are described here.</summary>
+
+* Sprint 1 19/03/23 - 20/03/23 (Finished at 21/03/23)
+
+  + Initial setup
+    - Install django
+    - Install Allauth
+    - Add Allauth templates to project templates
+    - Create base.html
+    - Create LyhnidasYourJobCoach project
+    - Create style.css and footer.css
+    - Create responsive navigation
+  
+* Sprint 21/03/23 - 23/03/23 (Finished on 23/03/23)
+
+  + Add Recruiter app
+    - Set up all Recruiters view
+    - Set up recruiter details (rec_details) view
+    - Set up add_job view
+    - Set up edit_job
+    - Set up job_detail
+    - Set up all_jobs
+    - Set up search_candidates
+    - Set up job_candidate_search
+    - Set up applicant_list
+    - Set up selected_list
+    - Set up select_applicant
+    - Set up remove_applicant
+
+  + Add Candidates app
+    - Set up home view
+    - Set up job_search_list
+    - Set up job_detail
+    - Set up saved_jobs
+    - Set up applied_jobs
+    - Set up my_profile
+    - Set up edit_profile
+    - Set up profile_view
+    - Set up delete_skill
+    - Set up save_job
+    - Set up apply_job
+    - Set up remove_job
+
+    + Add Urls for Recruiters App and Candidates App
+
+* Sprint 3 23/03/23 - 26/03/23 (Finished on 26/03/23)
+    + Customise allauth templates
+    - Set up templates
+    - Set up neccessary views
+
+* Sprint 4 26/03/23- 28/03/23 (finished 28/03 2023)
+    + Customise login templates
+    - Customise templates
+    + Add messages
+
+* Sprint 5 revising the project and making neccesary fixes 29/03/23 - 31/03/23 (Finished on 31/03/23)
+    + Debug and fixes
+    - Remove heroku app and reset databases to run locally
+    - Add new model and databases
+    - Fix views to add login required, search and category sorting functionality
+    + Testing
+    - Document all testing, revise code and complete README.md
+    
 
 
 
