@@ -436,7 +436,34 @@ Some features that I would like to implement are listed below.
 * [django_summernote](https://pypi.org/project/django-summernote/)
     * Allows to embed Summernote into Django very handy. Support admin mixins and widgets.
 
+## Deployment on Heroku <a name="deployment"></a>
 
+This project was deployed through Heroku using the following steps:
+
+### Requirements and Procfile
+Heroku needs to know which technologies are being used and any requirements, so I created files to let it know. Before creating the Heroku app, create these files using the following steps in GitPod: 
+* In the GitPod terminal, type ```pip3 freeze --local > requirements.txt``` to create your requirements file.
+* Create your Procfile and insert the following code: ```web: gunicorn jobcoach.wsgi ``` and make sure there is no additional blank line after it. 
+* Push these files to your repository.
+
+### Creating Heroku App
+* Log into Heroku
+* Select 'Create New App' from your dashboard
+* Choose an app name (if there has been an app made with that name, you will be informed and will need to choose an alternative)
+* Select the appropriate region based on your location
+* Click 'Create App'
+
+### Connecting to GitHub
+* From the dashboard, click the 'Deploy' tab towards the top of the screen
+* From here, locate 'Deployment Method' and choose 'GitHub'
+* From the search bar newly appeared, locate your repository by name
+* When you have located the correct repository, click 'Connect'
+
+### Environment Variables
+* Click the 'Settings' tab towards the top of the page
+* Locate the 'Config Vars' and click 'Reveal Config Vars'
+* Enter all variables needed.
+* Deploy the website
 
 
 
