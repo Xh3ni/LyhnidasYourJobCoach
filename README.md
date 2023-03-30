@@ -284,9 +284,92 @@ NewJobForm and JobUpdateForm.
     - Fix views to add login required, search and category sorting functionality
     + Testing
     - Document all testing, revise code and complete README.md
-    
 
+### Features <a name="features"></a>
+* Responsive design.
+* Website title and information on the site's purpose.
+* Navigation Menu (Site Wide).
+* Postgress databases to store information and user login/profile information.
+* Cloudinary to store static files
+* CRUD Functionality
+* Login functionality.
+* Logout functionality.
+* Ability to view all job posts.
+* Ability to view job details.
+* Ability to be able to search for job
+* Ability to search job by title and location,
+* Ability to apply, save and remove job.
+* Ability to Update profile.
+* Ability to see applied, Saved jobs
+* Ability to see if a user is selected, rejected or in process for a job
 
+* Ability to add and edit of job posts.
+* Ability to manage applicants list and selected list
+* Ability to search for candidates.
+
+* Admin creation and management of job posts.
+
+**Importance and Difficulty**
+
+|       Feature         |   Difficulty   |   Importance   |
+|:--------------------  |--------------- |--------------- |
+|Postgress databases to |       5        |       5        |
+|store information and  |                |                |
+|user login/profile     |                |                |
+|information            |                |                |
+|:--------------------  |--------------- |--------------- |
+|CRUD Functionality     |       5        |       5        |
+|:--------------------  |--------------- |--------------- |
+|Admin creation and     |       5        |       5        |
+|management of Posts    |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to view all    |       2        |       5        |
+|job posts.             |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to view        |       2        |       5        |
+|job details            |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to search      |       2        |       5        |
+|for a job by title     |                |                |
+|and location           |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to apply,save  |       3        |       5        |
+| and remove job        |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to Update      |       3        |       5        |
+| Profile               |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to see Applied,|       3        |       5        |
+|Saved Jobs             |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to see selected|       3        |       5        |
+|rejected, in process   |
+|candidates             |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to Add and     |       5        |       5        |
+| edit a job            |                |                |
+|:--------------------  |--------------- |--------------- |
+|Ability to manage      |       5        |       5        |
+|jobs and candidates    |                |                |
+|:--------------------  |--------------- |--------------- |
+|Registered user can    |       5        |       5        |
+|add a job              |                |                |
+|:--------------------  |--------------- |--------------- |
+|Login functionality    |       3        |       5        |
+|:--------------------  |--------------- |--------------- |
+|Navigation Menu        |       3        |       5        |
+|(Site Wide)            |                |                |
+|:--------------------  |--------------- |--------------- |
+|Responsive design      |       2        |       5        |
+|:--------------------  |--------------- |--------------- |
+|Website title and      |       1        |       5        |
+|information on the     |                |                |
+|the site purpose       |                |                |
+|:--------------------  |--------------- |--------------- |
+|Logout functionality   |       1        |       5        |
+|:--------------------  |--------------- |--------------- |
+|Search functionality   |       3        |       3        |
+|:--------------------  |--------------- |--------------- |
 
 
 
