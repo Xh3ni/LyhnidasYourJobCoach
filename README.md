@@ -135,6 +135,44 @@ The user can update all the parameters of the Profile model class.
 
 
 #### **Recruiters App**
+In the recruiters part, there are mostly all the things which are relevant to the recruiters and hiring companies,
+which consist of the job posting, getting candidates applying on job posts, selecting these candidates and also 
+viewing the resumes of all the candidates on the database. It also shows the current status of the job post, 
+like how many have applied and can see the applicants list.
+Then can select or reject them based on their profile and resume. 
+Also, there is an intelligence search feature built-in which shows the candidates who are the best fit
+based on their skills and job requirements to save time.
+
+Firstly is defined a CHOICES variable which consists of four choices (Full Time, Part Time, Internship, Remte),
+which is used in the Job class.
+
+`Job` - This class contains all the information relevant to the job post. 
+It has a <i>recruiter</i> variable which links it to the Recruiter posting the job post. 
+It also has all details about the job, like the title, location, company, description, skills required 
+and the type of the job, whether it is a full-time job, part-time job, an internship or a remote opportunity. 
+There is also a link section which can be left blank (only required when the recruiter wants to accept applicants on their website). 
+It also has a slug that helps create unique slugs based on the job title.
+
+`Applicants` - This class stores all the data related to the candidates who have applied to a particular job post. 
+It has a job variable linking it to the relevant job, an applicant variable which links it to the candidate who applied and a date when the candidate applied.
+
+`Selected` - This is the class which stores all the data related to the candidates 
+who have been selected for a particular job post. 
+It has a job variable linking it to the relevant job, an applicant variable which 
+links it to the candidate who was selected and a date when the candidate was selected.
+
+**forms.py**
+
+The form consists of two forms which is used for the recruiters part of the website:
+NewJobForm and JobUpdateForm.
+
+1. NewJobForm — The purpose of this form is to enable a recruiter to post a new job.
+
+2. JobUpdateForm— Recruiters use this form to update an existing job post.
+
+
+
+
 
 
 
