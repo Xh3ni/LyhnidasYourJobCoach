@@ -389,6 +389,54 @@ Some features that I would like to implement are listed below.
 
 + This site has a link to Lyhnidas Social Pages (Facebook, twitter, LinkedIn and gmail adresse) with a link on the page footer.
 
+## Technologies Used <a name="tech"></a>
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+	* This project uses HTML as the main language used to complete the structure of the Website.
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+	* This project uses custom written CSS to style the Website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    * JavaScript is used on multiple pages to manipulate the DOM.
+* [Python](https://www.python.org/)
+    * This projects core was created using Python, the back-end logic and the means to run/view the Website.
+    * Python Modules used (These can be found in the requirements.txt project file):
+* [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+    * This project was created using the Django framework, the back-end logic and the means to run/view the Website.
+* [Bootstrap](https://getbootstrap.com/)
+    * The Bootstrap framework 4 was used through the website for layout and responsiveness.
+* [Google Fonts](https://fonts.google.com/)
+	* Google fonts are used in the project to import the fonts for the site.
+* [GitHub](https://github.com/)
+	* GithHub is the hosting site used to store the source code for the Website, as well as github projects to manage the planning and implementation of all functionality using a kanban board. 
+* [Gitpod](https://gitpod.io/)
+	* Gitpod is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+* [Heroku](https://dashboard.heroku.com/apps)
+    * Heroku was used to deploy the live website.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+* [Font Awesome](https://fontawesome.com/)
+    * All the Icons displayed throughout the website are Font Awesome icons.
+* [Favicon](https://favicon.io/)
+    * Favicon.io was used to make the site favicon 
+* [Cloudinary](https://cloudinary.com/)  
+    * Cloudinary is an end-to-end image and video-management solution for websites and mobile apps, covering everything from image and video uploads, storage, manipulations, optimizations to delivery.
+* [humanize](https://github.com/Humanizr/Humanizer) 
+    * Provides an easy human readable time format when viewing posts.
+* [crispyforms](https://django-crispy-forms.readthedocs.io/en/latest/#) 
+    * To render django forms in an elegant manner and one which interacts very well with bootstrap styling.
+* [AutoSlug](https://django-autoslug.readthedocs.io/en/latest/)
+    * To generate slug
+* [django-countries](https://pypi.org/project/django-countries/)
+    * A Django application that provides country choices for use with forms, flag icons static files, and a country field for models.
+* [django_filters](https://pypi.org/project/django-filter/)
+    * Django-filter is a reusable Django application allowing users to declaratively add dynamic QuerySet filtering from URL parameters.
+* [cities_light](https://pypi.org/project/django-cities-light/)
+    * This add-on provides models and commands to import country, subregion, region/state, and city data in your database.
+    (Removed from project/ Not used)
+* [django_summernote](https://pypi.org/project/django-summernote/)
+    * Allows to embed Summernote into Django very handy. Support admin mixins and widgets.
+
+
 
 
 
