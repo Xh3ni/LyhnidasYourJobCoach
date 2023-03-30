@@ -6,6 +6,7 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Profile)
 class ProfileAdmin(SummernoteModelAdmin):
 
+    prepopulated_fields = {'slug': ('user',)}
     list_display = ('full_name', 'slug', 'country', 'looking_for')
     search_fields = ['country', 'looking_for']
     list_filter = ('user', 'looking_for')

@@ -16,15 +16,15 @@ CHOICES = (
 
 class Profile(models.Model):
     user = models.OneToOneField(
-        User, on_delete=models.CASCADE, primary_key=True, related_name='profile')
+        User, on_delete=models.CASCADE, primary_key=True, related_name='profile')        
+    slug = models.SlugField(max_length=200, unique=True, null=True)
     full_name = models.CharField(max_length=200, null=True, blank=True)
     country = CountryField(null=True, blank=True)
     location = models.CharField(max_length=255, null=True, blank=True)
     resume = models.FileField(upload_to='resumes', null=True, blank=True)
-    grad_year = models.IntegerField(blank=True)
+    grad_year = models.IntegerField(blank=True, null=True)
     looking_for = models.CharField(
         max_length=30, choices=CHOICES, default='Full Time', null=True)
-    slug = models.SlugField(max_length=200, unique=True, null=True)
 
     def get_absolute_url(self):
         return reverse("/profile/{}", kwargs={"slug": self.slug})

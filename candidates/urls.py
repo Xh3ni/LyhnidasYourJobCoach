@@ -1,5 +1,4 @@
 from django.urls import path, include
-from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
@@ -16,5 +15,4 @@ urlpatterns = [
     path('saved_job_list/', views.saved_jobs, name='saved-jobs'),
     path('applied_job_list/', views.applied_jobs, name='applied-jobs'),
     path('job/<slug>/remove/', views.remove_job, name='remove-job'),
-    path('login/', auth_views.LoginView.as_view(template_name='../templates/account/login.html'), name='login'),
 ]

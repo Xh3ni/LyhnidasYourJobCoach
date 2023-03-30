@@ -20,7 +20,7 @@ def rec_details(request):
     return render(request, 'recruiters/details.html', context)
 
 
-@login_required
+@login_required(login_url='account_login')
 def add_job(request):
     user = request.user
     if request.method == "POST":
@@ -41,7 +41,7 @@ def add_job(request):
     return render(request, 'recruiters/add_job.html', context)
 
 
-@login_required
+@login_required(login_url='account_login')
 def edit_job(request, slug):
     user = request.user
     job = get_object_or_404(Job, slug=slug)
@@ -72,7 +72,7 @@ def job_detail(request, slug):
     return render(request, 'recruiters/job_detail.html', context)
 
 
-@login_required
+@login_required(login_url='account_login')
 def all_jobs(request):
     jobs = Job.objects.filter(recruiter=request.user).order_by('-date_posted')
     paginator = Paginator(jobs, 20)
@@ -86,7 +86,7 @@ def all_jobs(request):
     return render(request, 'recruiters/job_posts.html', context)
 
 
-@login_required
+@login_required(login_url='account_login')
 def search_candidates(request):
     profile_list = Profile.objects.all()
     profiles = []
@@ -129,7 +129,7 @@ def search_candidates(request):
     return render(request, 'recruiters/candidate_search.html', context)
 
 
-@login_required
+@login_required(login_url='account_login')
 def job_candidate_search(request, slug):
     job = get_object_or_404(Job, slug=slug)
     relevant_candidates = []

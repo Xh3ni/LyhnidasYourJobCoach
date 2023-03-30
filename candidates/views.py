@@ -68,7 +68,7 @@ def job_search_list(request):
 
 # view to display details of a particular job
 
-@login_required
+@login_required(login_url='account_login')
 def job_detail(request, slug):
     job = get_object_or_404(Job, slug=slug)
     apply_button = 0
