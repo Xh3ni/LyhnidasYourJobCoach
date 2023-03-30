@@ -170,6 +170,56 @@ NewJobForm and JobUpdateForm.
 
 2. JobUpdateForm— Recruiters use this form to update an existing job post.
 
+## Scope <a name="scope"></a>
+
+ * A simple, straightforward, intuitive UX experience;
+ * Explicit content;
+ * An easy navigation for the user through all the pages and features;
+ * A site that is visually appealing on all screen sizes.
+
+### Structure
+
+* A clear and straightforward layout is in place to ensure users can navigate intuitively and have an enjoyable browsing experience.
+* Mobile navigation is the same on all pages to ensure easy navigation.
+* Footer is fixed on the bottom with links to social media.
+
+## User Experience
+
+### User Stories <a name="user-stories"></a>
+
+*Epic: Viewing & Navigation of the web app as a Job Seeker works as expected
+1.	As a ... first time user... I can... see the home page of the website and jobs so that I can ...decide whether or not I should sign-up...
+2. As a ...first time user... I can ...easily navigate to the log in so that I can ...create a profile...
+3. As a ...first time user, as a candidate... I want to be able to... know what is expected of me on the home page so that I can ...easily navigate and find information...
+
+* EPIC: Registration & User accounts work as expected
+4. As a ...Candidate.. I can be able to ...easily login and log out... so that I can ...ensure my account is secure...
+5. As a ...candidate... I can be able to ...have a personalised user profile... so that I can ...view and update my details...
+6. As a ...Recruiter... I can be able to ...easily login and log out... so that I can ...ensure my account is secure...
+
+* Epic: Job Sorting & Searching work as expected
+7. As a ...candidate... I can be able to ...search for a job by title or locaton... so that I can ...find a specific job I'm interested in...
+8. As a ...candidate... I can ...see and access all job listed... so that I can ...apply on different job positions....
+
+* Epic: Applying & Saving Jobs work as expected
+9. As a ...candidate... I can ...read/ apply/ save a job... so that I can ...ensure maximum engagement in my profile...
+10. As a ...candidate... I can be able to ...read/ apply/ save a job... so that I can ...alter how I would like my job application to look to allow for maximum engagement...
+
+*Epic: Viewing & Navigation of the web app as a Recruiter works as expected
+11. As a ...first time user... I can ...see the home page of the website and jobs... so that ...I can decide whether or not I should sign-up...
+12. As a ...first time user as a recruiter... I want to be able to ...know what is expected of me on the home page... so that I can ...easily navigate and find information...
+13. As a ...first time user... I can ...easily navigate to the log in... so that I can ...create a profile...
+
+* Epic: Job Posting & Selecting Candidates works as expected
+14. As a ...Recruiter...I can ...Read/ edit/ delete a job post & Candidates... so that I can ...ensure the perfect candidate for the job position...
+15. As a ...Recruiter... I can be able ...to Read/ edit/ delete a job post & Candidates... so that I can ...ensure the perfect candidate for the job position...
+
+* EPIC: Site management
+16. As an ...admin... I can ...add/edit/update/delete a job post... so that ...maintain the site and remove any inappropriate contents...
+17. As an ...admin... I can ...review all job posts... so that I can ...maintain the site and remove any inappropriate post...
+
+
+
 
 
 
