@@ -454,6 +454,24 @@ All clickable links must redirect to the correct pages.
 All forms linked to the database must be tested to ensure 
 they insert all given fields into the correct collections.
 
+HTML Code must pass through the [W3C HTML Validator](https://validator.w3.org/#validate_by_uri).
+CSS Code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
+
+Python Code must pass through [PEP8 Validator](https://pep8ci.herokuapp.com/#)
+
+The website was extensively tested as it was developed using:
+* print().
+* The terminal by printing the expected outcome.
+* Testing User Stories.
+* Testing scenarios manually.
+* Testing functionallity manually.
+
+This project has been tested throughout its inception. Each input has been thoroughly tested to make sure that any invalid inputs are handled correctly and a response is shown to the user.
+
+Full test results can be found [here](TESTING.md)
+
 ## Deployment on Heroku <a name="deployment"></a>
 
 This project was deployed through Heroku using the following steps:

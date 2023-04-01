@@ -26,7 +26,7 @@ def job_search_list(request):
     query = request.GET.get('p')
     loc = request.GET.get('q')
     object_list = []
-    if (query == None):
+    if (query is None):
         object_list = Job.objects.all()
     else:
         title_list = Job.objects.filter(
@@ -48,7 +48,7 @@ def job_search_list(request):
         for i in job_type_list:
             if i not in object_list:
                 object_list.append(i)
-    if (loc == None):
+    if (loc is None):
         locat = Job.objects.all()
     else:
         locat = Job.objects.filter(
@@ -67,6 +67,7 @@ def job_search_list(request):
     return render(request, 'candidates/job_search_list.html', context)
 
 # view to display details of a particular job
+
 
 @login_required(login_url='account_login')
 def job_detail(request, slug):
@@ -172,7 +173,6 @@ def edit_profile(request):
             data.save()
             messages.success(request, 'Your profile is updated.')
             return redirect('my-profile')
-            
     else:
         form = ProfileUpdateForm(instance=profile)
     context = {
@@ -227,7 +227,6 @@ def apply_job(request, slug):
         job=job, applicant=user)
     messages.success(request, 'Your application is successfully submitted.')
     return HttpResponseRedirect('/job/{}'.format(job.slug))
-
 
 
 @login_required

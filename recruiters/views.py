@@ -98,12 +98,12 @@ def search_candidates(request):
     rec1 = request.GET.get('r')
     rec2 = request.GET.get('s')
 
-    if rec1 == None:
+    if rec1 is None:
         li1 = Profile.objects.all()
     else:
         li1 = Profile.objects.filter(location__icontains=rec1)
 
-    if rec2 == None:
+    if rec2 is None:
         li2 = Profile.objects.all()
     else:
         li2 = Profile.objects.filter(looking_for__icontains=rec2)
@@ -216,4 +216,3 @@ def remove_applicant(request, can_id, job_id):
     applicant = Applicants.objects.filter(job=job, applicant=user).first()
     applicant.delete()
     return HttpResponseRedirect('/hiring/job/{}/applicants'.format(job.slug))
-
