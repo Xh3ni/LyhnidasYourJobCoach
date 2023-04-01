@@ -389,6 +389,17 @@ Some features that I would like to implement are listed below.
 
 + This site has a link to Lyhnidas Social Pages (Facebook, twitter, LinkedIn and gmail adresse) with a link on the page footer.
 
+* Colours
+
+The Colour scheme was generated using the eyedropper plugin to get one colour from the logo image and [colours](https://coolors.co/) to create the colour palette.
+A simple pallette using blue and white and complimented by bootstrap colors and classes was eventually decided on. 
+
+* Font Selection
+ 
+Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the website.
+
+The chosen fonts were Lato for the site.
+
 ## Technologies Used <a name="tech"></a>
 
 * [HTML](https://en.wikipedia.org/wiki/HTML)
