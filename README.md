@@ -38,7 +38,7 @@ To create a web application which will allow helps job seekers and recruiters co
 A user can easily access the website to search and apply for a job, and also, a user can add a job as a recruiter.
 
 ## Database Design <a name="database"></a>
-[Database Schema] 
+[Database Schema](https://res.cloudinary.com/dmlbtywv4/image/upload/v1680341061/Database_ER_diagram_Lyhnidas_Your_Job_Coach_e0tjbn.jpg)
 
 #### **User Account**
 This app is use for all authentication, profile and account purposes. I am using the allauth 
