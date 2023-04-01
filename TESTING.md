@@ -59,6 +59,9 @@ The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) wa
 
 For the python validation I used CI Python Linter ny Code Institute. The final flagged files were checked in [PEP8 Online](https://pep8ci.herokuapp.com/#)). The only issues found were a few longer lines in the base project's settings.py, models.py and webhook_handler.py and migrations files due to HTML blocks.
 
+
+[PEP8 Validation](https://res.cloudinary.com/dmlbtywv4/image/upload/v1680381594/pythonvalidator_rv32om.png)
+
 *Go back to the [top](#table-of-contents)*
 
 # Testing
