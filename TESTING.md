@@ -1,6 +1,6 @@
 # Lyhnidas Your Job Coach Testing
 
-:arrow_left: [Return to the README](READEME.md)
+:arrow_left: [Return to the README](README.md)
 
 ## Table of Contents
 - [Performance](#performance)
